@@ -1,22 +1,21 @@
-#include <string.h>
+#include "main.h"
 
 /**
- * rev_string - reverse string
- * @s: string in question
+ * rev_string - Reverses a string.
+ * @s: string to be reserved.
  */
 void rev_string(char *s)
 {
-	int x =  strlen(s), y;
+	int i = 0, len = 0;
+	char tmp;
 
-	char temp[x + 1];
+	while (s[i++])
+		len++;
 
-	y = 0;
-	x -= 1;
-	while ( x >= 0)
+	for (i = len - 1; i >= len / 2; i--)
 	{
-		temp[y] = s[x];
-		x--;
-		y++;
+		tmp = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = tmp;
 	}
-	strcpy(s, temp);
 }
