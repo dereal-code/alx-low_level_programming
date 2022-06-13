@@ -1,43 +1,28 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
+ * print_alphabet_x10 - prints 10X alphabets
  *
- *  * print_alphabet_x10 - a function that prints 10 times the alphabet
- *
- *   *
- *
- *    * Return: x10 a-z
- *
- *     */
-
+ */
 void print_alphabet_x10(void)
-
 {
+	char my_alpha[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+		'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
+		'X', 'Y', 'Z'};
 
-		char alpha, co;
+	int j = 0, x;
 
+	while (j < 10)
+	{
+		x = 0;
 
-
-			co = 0;
-
-
-
-				while (co < 10)
-
-						{
-
-									for (alpha = 'a'; alpha <= 'z'; alpha++)
-
-												{
-
-																_putchar (alpha);
-
-																		}
-
-											co++;
-
-													_putchar('\n');
-
-														}
-
+		while (x < 26)
+		{
+			_putchar(tolower(my_alpha[x]));
+			x++;
+		}
+		_putchar('\n');
+		j++;
+	}
 }
