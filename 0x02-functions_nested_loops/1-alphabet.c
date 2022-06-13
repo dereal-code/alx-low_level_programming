@@ -1,19 +1,22 @@
 #include "main.h"
+#include <ctype.h>
+
 /**
- * main - Entry point
+ * print_alphabet - prints alphabets
  *
- * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	char my_alpha[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+		'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
+		'X', 'Y', 'Z'};
+
+	int x = 0;
+
+	while (x < 26)
+	{
+		_putchar(tolower(my_alpha[x]));
+		x++;
+	}
 	_putchar('\n');
-	return (0);
 }
