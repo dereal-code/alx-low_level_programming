@@ -1,26 +1,16 @@
-#include <stdio.h>
-#include <ctype.h>
-
-/**
- * main - functions prints lowercase chars
- *
- * Return: 0
- */
-int main(void)
-{
-	const char alpha[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G',
-		'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
-		'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-	int x;
-
-	for (x = 0; x < 26; x++)
-	{
-		putchar(tolower(alpha[x]));
-	}
-	for (x = 0; x < 26; x++)
-	{
-		putchar(alpha[x]);
-	}
-	putchar('\n');
-	return (0);
-}
+#include <stdio.h>                                                                                                                              
+int main(){                                                                                                                                     
+                char pr;                                                                                                                        
+char ch;                                                                                                                                        
+                        for (ch = 'a';ch <= 'z'; ch++){                                                                                         
+                                                                                                                                                
+                        putchar(ch);                                                                                                            
+                                                                                                                                                
+                        }                                                                                                                       
+                                                                                                                                   
+                        for (pr = 'A';pr <= 'Z'; pr++){                                                                                         
+                                                                                                                                                
+                       putchar(pr);                                                                                                             
+                        }       return 0;                                                                                                       
+                                                                                                                                                
+} 
