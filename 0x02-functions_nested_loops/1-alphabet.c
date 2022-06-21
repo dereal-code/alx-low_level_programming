@@ -1,22 +1,17 @@
 #include "main.h"
-#include <ctype.h>
-
 /**
- * print_alphabet - prints alphabets
+ * print_alphabet - Prints the alphabet in lowercase
  *
+ * Return: Always 0 (Success)
  */
+
 void print_alphabet(void)
 {
-	char my_alpha[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
-		'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
-		'X', 'Y', 'Z'};
+	char alpha;
 
-	int x = 0;
-
-	while (x < 26)
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		_putchar(tolower(my_alpha[x]));
-		x++;
+		_putchar (alpha);
 	}
 	_putchar('\n');
 }
