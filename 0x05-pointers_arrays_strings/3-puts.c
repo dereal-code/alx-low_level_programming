@@ -1,10 +1,10 @@
+#include "main.h"
 #include <stdio.h>
+#include <string.h>
+void print_rev(char *s) {
+    int i;
 
-/**
- * _puts - writes to stdout
- * @str: string to be printed
- */
-void _puts(char *str)
-{
-	puts(str);
+    for (i = strlen(s);i>=0;i--) {
+        printf("%c", s[i]);
+    }
 }
